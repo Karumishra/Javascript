@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+
+<p> Write your number! </p>
+<p> <input type="text" id="guess"> <button id="CG">Guess! </button></p>
+<script type="text/javascript">
+document.getElementById("CG").onclick=function()
+{
+var randomNum = Math.random();
+randomNum = randomNum * 6;
+randomNum = Math.floor(randomNum);
+if(document.getElementById("guess").value == randomNum) {
+alert("Well done! You got it.");}
+else{
+alert("Nope! Try again number was "+randomNum);
+}
+
+}
+
+
+</script>
+</body>
+</html>
